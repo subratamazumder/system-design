@@ -9,7 +9,7 @@ if [ $# -eq 1 ]
 fi
 
 echo "Committing with message as- "$COMMIT_MESSAGE
-git pull
+# git pull
 git add .
 git commit -m "$COMMIT_MESSAGE" .
 git push
