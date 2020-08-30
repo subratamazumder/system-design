@@ -41,7 +41,7 @@ Hello pepapig with love from redis
 
 `redis-cli` can be used to verify cache data inside redis docker container
 ````
-- docker exec -it local-redis sh
+docker exec -it local-redis sh
 redis-cli
 127.0.0.1:6379> ping
 PONG
