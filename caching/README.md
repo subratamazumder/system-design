@@ -1,5 +1,6 @@
 # Caching
 ## Key Concepts
+[Redis](https://hub.docker.com/_/redis) is one of the most popular in memory caching technology (`key-value data store`) for best effort caching solution.
 ## Hands On
 ### Set Up
 - `docker pull redis`
@@ -38,10 +39,17 @@ Hello pepapig with love from redis
 
 ### Notes
 
-Add configs in -> /usr/local/etc/nginx/servers/
-Default config -> /usr/local/etc/nginx/nginx.conf
-Logs will be in -> /usr/local/var/log/nginx/
-Default webroot is -> /usr/local/var/www/
-Default listen address -> http://localhost:8080
-To reflect any changes of `nginx.conf` use `brew services restart nginx`
+`redis-cli` can be used to verify cache data inside redis docker container
+````
+- docker exec -it local-redis sh
+redis-cli
+127.0.0.1:6379> ping
+PONG
+127.0.0.1:6379> get pepapig
+"Hello pepapig with love from redis\n\n"
+127.0.0.1:6379> exit
+exit
+````
+### Reference
+https://markheath.net/post/exploring-redis-with-docker
 
