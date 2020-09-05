@@ -12,6 +12,7 @@ This repo holds hands on learning tutorial on various topics on system design
 - Sharding
 - Leader Election
 - Pub/Sub
+- Map Reduce
 - Streaming
 - Rate Limiting
 - Logging & Monitoring
