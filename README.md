@@ -1,3 +1,4 @@
+![GitHub](https://img.shields.io/github/license/subratamazumder/system-design?style=for-the-badge)
 # System Design
 This repo holds hands on learning tutorial on various topics on system design concepts
 - [Client Server](client-server/README.md)
